@@ -1,0 +1,46 @@
+﻿				Homework For R
+
+1] #Create one folder
+#Create an R Script and write a code to initialise the variables l,m and n with your birthdate, month, and year. Then concate these 3 variables and save result in DOB variable. Save this fie with the name as of your Roll number, rn_68
+
+
+
+
+2]	Create a list named ls. The list ls contains following 6 vectors with their values as follows :
+Rollno- 1:4
+First name- Ravi,Om,Ajay,Shiv
+Last name-Dev,Gandhi,Pande,Rao
+Subject-AE,DS,ML,OS
+Marks-35,40,38,02
+Result –P,P,P,F.  
+Task To be performed:
+1.	Print the list ls.
+2.	Print all the independent element of list ls.
+3.	Find the class of element of the list.
+4.	What will be the output of the following commands:
+What will be the output  for
+a)	Print(ls[[2]][1])
+b)	 print(ls[[4]][4])
+c)	print(ls[5])
+5.	It was found that the marks of Ajay were entered wrongly. The correct marks should be 45. Replace the marks of Ajay without disturbing the other elements or without loading the complete list again.
+ABHA DIXIT
+2:38 PM
+6.	Change the subject name of OS to OE. Modify the required element only.
+7.	It was decided that the data base should also have native place information. Ravi stays at Pune, Ajay at Mumbai, Shiv at Nashik and Om at Nagpur. Please add this information also in the list.
+8.	Add one more student information names Julie Gommes. The marks obtained by Julie in subject DS is 30 and the result is P. Her native place is Hyderabad.
+Homework for Practice:
+1. Create the list x which contain numeric vector n(2,3,5), a character vector s(“aa”,”bb”,”cc”,”dd) , and logical vector b(T,F,T,F), and numeric value 3. Perform the following task:
+  1.From the list print s vector values by list slicing.
+2.From the list find s vector values, and numeric value 3, with the help of    index vector by list slicing 
+3. From the list find s vector values by member access 
+4. Modify s vector value replacing “aa” by “tt” and again find s
+
+
+
+3] Suppose age is a vector containing ages of 10 persons as 22, 27, 31, 41, 30, 25, 19, 20, 23, 35
+i.	Access age of fourth person--
+ii.	Create a vector age30 with age of person > 30   --
+iii.	Access age of last 3 person -- 
+iv.	Find number of elements in vector age---
+v.	Access ages of persons except 5th and 7th –
+vi.	Create a vector age2 with age of persons between 20 and 25---

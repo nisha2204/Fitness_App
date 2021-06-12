@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title="Fitness App"
+            app:titleTextColor="#fff"
+            android:background="#FFA500"
+            />
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/heightData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/border1"
+                    android:layout_marginTop="5dp"
+                    android:hint="Height"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Start Pedometer"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/border"
+                    />
+
+                <Button
+                    android:id="@+id/Stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Stop Pedometer"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/border"
+                    />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/border1"
+                    android:src="@drawable/steps"/>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/tvx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="5dp"
+                        android:text="STEPS"
+                        android:textSize="30dp" />
+
+                    <!--<TextView
+                        android:id="@+id/tvh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvx"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="5dp"
+                        android:text="(in units)"
+                        android:textSize="10dp" />-->
+
+                    <TextView
+                        android:id="@+id/stepsNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvx"
+                        android:paddingTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="40dp" />
+                    <!--<ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/stepsNumber"
+                        android:src="@drawable/steps"/-->
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/border1"
+                    android:src="@drawable/distance"/>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/tvz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="DISTANCE"
+                        android:textSize="30dp" />
+
+                   <!-- <TextView
+                        android:id="@+id/tvn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvz"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="5dp"
+                        android:text="(in metres)"
+                        android:textSize="10dp" />-->
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvz"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="40dp" />
+                    <!--<ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/stepsNumber"
+                        android:src="@drawable/steps"/-->
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/border1"
+                    android:src="@drawable/calories"/>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/tvv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALORIES"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="30dp"
+                        android:paddingLeft="5dp"
+                        />
+                    <!--<TextView
+                        android:id="@+id/tvi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvv"
+                        android:text="(in grams)"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="10dp"
+                        android:paddingLeft="5dp"
+                        />-->
+                    <TextView
+                        android:id="@+id/calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvv"
+                        android:paddingTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="40dp"
+                        android:layout_centerHorizontal="true"/>
+                    <!--<ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/stepsNumber"
+                        android:src="@drawable/steps"/-->
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/border1"
+                    android:src="@drawable/speed"/>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/tvp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPEED"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="30dp"
+                        android:paddingLeft="5dp"
+                        />
+                    <!--<TextView
+                        android:id="@+id/tvs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvp"
+                        android:text="(in m/sec)"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="10dp"
+                        android:paddingLeft="5dp"
+                        />-->
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvp"
+                        android:paddingTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="40dp"
+                        android:layout_centerHorizontal="true"/>
+                    <!--<ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/stepsNumber"
+                        android:src="@drawable/steps"/-->
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Chronometer
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+                android:id="@+id/chronometer5" />
+
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

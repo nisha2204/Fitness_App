@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:gravity="center"
+    tools:openDrawer="start"
+    tools:context=".recoomendation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                app:title="Fitness App"
+                app:titleTextColor="#fff"
+                android:background="#FFA500"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT TO DO?"
+                    android:textColor="#FFA500"
+                    android:textSize="30dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv1"
+                    android:id="@+id/tv4"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border1"
+                    android:text="AEROBICS/CARDIO"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border1"
+            android:text="aerobic activities are great for burning calories and paring down unwanted fat. They consist of activities that make the heart and lungs work harder:
+think of walking, biking, running, and swimming, for example."
+            android:textColor="#000"
+            android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border1"
+                android:text="150 minutes of moderate aerobic exercise per week (for example, 30 minutes on each of five days)
+or 75 minutes of vigorous aerobic activity (or an equiva- lent mix of the two)."
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="10dp"
+                    android:text="2"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv2"
+                    android:id="@+id/tv5"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border1"
+                    android:text="STRENGTH TRAINING"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border1"
+                android:text="Strength or resistance training, which typically employs equipment such as weight machines, free weights, or resistance bands or tubing, protects against bone loss and builds muscle. It also improves your body’s ratio of lean muscle mass to fat. It, too, deserves an important place in your exercise routine."
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border1"
+                android:text="Two or more times a week, with at least 48 hours between sessions. One set per session is effective, though two or three sets may be better, according to some research. Repeat each exercise eight to 12 times (reps). Your body needs at least 48 hours for recovery and repair between strength training sessions in order to build more muscle and get stronger."
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="10dp"
+                    android:text="3"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv3"
+                    android:layout_marginLeft="48dp"
+                    android:id="@+id/tv6"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border1"
+                    android:text="BALANCE EXERCISES"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border1"
+                android:text="Older adults at risk for falls can benefit from a combination of walking, strength training, and balance exercises. Balance-enhancing activities include tai chi, yoga, and Pilates. Strength training exercises that work core muscles in your abdomen and back also help with balance."
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border1"
+                android:text="For older adults at risk for falls, the guidelines recommend 30 minutes of balance training and muscle strengthening exercises three times a week, plus at least 30 minutes of walking activities twice or more weekly."
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

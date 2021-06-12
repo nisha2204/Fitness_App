@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        />
+    <item android:id="@+id/menu_aerobic"
+        android:title="Aerobic/Cardio"/>
+    <item android:id="@+id/menu_strength"
+        android:title="Strength Training"/>
+    <item android:id="@+id/menu_balance"
+        android:title="Balance Exercises"/>
+        <!--android:icon="@drawable/ic_home_black_24dp"-->
+
+   <!-- <item android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings"/>-->
+    <item android:id="@+id/menu_exercise"
+        android:title="Your Activity"/>
+       <!-- android:icon="@drawable/ic_fitness_center_black_24dp"-->
+    <item android:id="@+id/menu_cardio"
+        android:title="Your Aerobic Activity"/>
+    <!--<item android:id="@+id/menu_logout"
+        android:title="Logout"/>-->
+
+</menu>

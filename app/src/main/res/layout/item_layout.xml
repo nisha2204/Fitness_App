@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/item_layout"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date1"
+            android:text="DATE"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_marginRight="90dp"
+            android:layout_alignRight="@+id/date1"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/px1"
+            android:text="PUSHUPS"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pushups"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentRight="true"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/px2"
+            android:text="PULLUPS"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pullups"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentRight="true"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/px3"
+            android:text="SQUATS"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/squats"
+            android:layout_alignParentRight="true"
+            android:textSize="30sp"
+            android:layout_marginRight="100dp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/px4"
+            android:text="PLUNK"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plunk"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentRight="true"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/px5"
+            android:text="SITUPS"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/situps"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentRight="true"
+            android:textSize="30sp"
+            android:textColor="#FFA500"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

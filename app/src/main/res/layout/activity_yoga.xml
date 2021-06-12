@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".yoga">
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselview"
+        android:layout_height="500dp"
+        android:layout_width="500dp"
+        app:fillColor="#fff"
+        app:pageColor="#000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#ff777777"
+        app:strokeWidth="1dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save progress"
+        android:id="@+id/save"/>
+</LinearLayout>
